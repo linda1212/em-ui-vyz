@@ -4,12 +4,16 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+// import "./assets/less/theme-default.less"
+require('!style-loader!css-loader!less-loader!./assets/less_em2/theme-dark-blue.less');
+// require('!style-loader!css-loader!less-loader!./assets/less/theme-default.less');
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
-  router,
-  components: { App },
-  template: '<App/>'
+    el: '#app',
+    router,
+    components: { App },
+    template: '<App/>'
 })

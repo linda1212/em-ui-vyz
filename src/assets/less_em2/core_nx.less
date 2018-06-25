@@ -41,7 +41,8 @@ body {
 
 .clearfix:after {
     content: "";
-    display: block clear:both;
+    display: block;
+    clear:both;
     visibility: hidden;
     line-height: 0;
     height: 0;
@@ -446,7 +447,7 @@ a:focus {
     color: #666;
     font-size: 14px;
     line-height: @line-height-base;
-    .no_text_break ();
+    .no_text_break();
 }
 
 .wigit-value {
@@ -458,7 +459,7 @@ a:focus {
         position: relative;
         top: 6px;
         max-width: calc(~"100% - 72px");
-        .no_text_break ();
+        .no_text_break();
     }
 
     .unit {
@@ -473,7 +474,7 @@ a:focus {
         vertical-align: bottom;
     }
 
-    .no_text_break ();
+    .no_text_break();
 }
 
 .dashboard-text {
@@ -1116,7 +1117,7 @@ a:focus {
     display: none !important;
 }
 
-//dashboard timeline 
+//dashboard timeline
 .time-wigit {
     &:extend(.clearfix all);
     position: relative;
@@ -1849,7 +1850,7 @@ textarea.form-control:focus {
         font-size: 14px;
         color:#262626;
     }
-    max-height: @this_height;  
+    max-height: @this_height;
     overflow: auto;
     margin-bottom: 23px!important;
 
@@ -1942,7 +1943,7 @@ textarea.form-control:focus {
         .steps-item-title {
             color:rgba(0,0,0,0.85);
         }
-        
+
         .steps-item-icon {
             background-color: #1890ff;
         }
@@ -2008,7 +2009,6 @@ textarea.form-control:focus {
         color: rgba(0,0,0,0.45);
     }
 }
-
 
 .version {
     font-size: 14px;
